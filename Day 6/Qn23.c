@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int num, count = 0;
+
+    printf("Enter Number: ");
+    scanf("%d", &num);
+
+    while(num > 0)
+    {
+        if(num % 2 == 1)
+            count++;
+
+        num /= 2;
+    }
+
+    printf("Set Bits = %d", count);
+
+    return 0;
+}
